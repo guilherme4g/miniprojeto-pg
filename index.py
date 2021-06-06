@@ -1,6 +1,7 @@
-from src.index import Ponto
+from src.index import Vetor, produtoEscalar
 
 # istanciar objeto
-ponto = Ponto(1,2,3)
-print(ponto.x3)
+vetor1 = Vetor(4,2,3)
+vetor2 = "guilherme"
 
+print(produtoEscalar(vetor1, vetor2))
