@@ -11,3 +11,4 @@ from src.objetos.Vetor import  Vetor
 #Importando funcoes - Ferramentas Basicas
 from src.FerramentasBasicas.produtoEscalar import  produtoEscalar
 from src.FerramentasBasicas.norma import norma
+from src.FerramentasBasicas.produtoVetorial import produtoVetorial
