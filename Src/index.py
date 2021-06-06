@@ -1,5 +1,5 @@
 # Importando objetos
-from Objetos.Ponto import  Ponto
+from Objetos import  Ponto
 
 # istanciar objeto
 ponto = Ponto(1,2,3)
