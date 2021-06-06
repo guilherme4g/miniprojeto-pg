@@ -12,3 +12,4 @@ from src.objetos.Vetor import  Vetor
 from src.FerramentasBasicas.produtoEscalar import  produtoEscalar
 from src.FerramentasBasicas.norma import norma
 from src.FerramentasBasicas.produtoVetorial import produtoVetorial
+from src.FerramentasBasicas.saoParalelos import saoParalelos
