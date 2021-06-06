@@ -1,4 +1,4 @@
-from src.index import Vetor, produtoEscalar
+from src import Vetor, produtoEscalar
 
 # Tetando função produtoEscalar com vetor invalido
 vetor1 = Vetor(4,2,3)

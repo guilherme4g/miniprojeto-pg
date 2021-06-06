@@ -1,4 +1,4 @@
-from src.index import Vetor
+from src import Vetor
 
 def produtoEscalar (vetor1, vetor2):
     if type(vetor1) is not Vetor: return "vetor1 não é um vetor valido"
