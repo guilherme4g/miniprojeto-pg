@@ -1,4 +1,4 @@
-from src.objetos.Vetor import Vetor
+from src import Vetor
 
 def eLI (vetor1, vetor2, vetor3):
     if type(vetor1) is not Vetor: raise Exception("vetor1 não é um vetor valido") 
