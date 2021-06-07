@@ -1,8 +1,8 @@
 from src import Vetor
 
 def saoParalelos(vetor1, vetor2):
-    if type(vetor1) is not Vetor: return "vetor1 não é um vetor valido"
-    if type(vetor2) is not Vetor: return "vetor2 não é um vetor valido"
+    if type(vetor1) is not Vetor: raise Exception("vetor1 não é um vetor valido")
+    if type(vetor2) is not Vetor: raise Exception("vetor2 não é um vetor valido")
 
     #Para serem paralelos existe alfa cujo vetor1 = vetor2*alfa
     #Logo vetor1/vetor2 = alfa
