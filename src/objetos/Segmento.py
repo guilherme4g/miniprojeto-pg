@@ -1,4 +1,4 @@
-from src import Ponto
+from src.objetos.Ponto import Ponto
 
 
 class Segmento:

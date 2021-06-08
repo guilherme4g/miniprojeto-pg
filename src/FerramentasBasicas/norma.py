@@ -1,4 +1,4 @@
-from src import Vetor
+from src.objetos.Vetor import Vetor
 import math
 
 def norma(vetor):

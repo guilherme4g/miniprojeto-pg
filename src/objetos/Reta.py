@@ -1,7 +1,5 @@
-from src import Vetor
-from src import Ponto
-
-
+from src.objetos.Vetor import Vetor
+from src.objetos.Ponto import Ponto
 class Reta:
     def __init__(self, ponto, vetorDiretor):
         assert type(ponto) is Ponto

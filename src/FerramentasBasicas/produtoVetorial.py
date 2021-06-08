@@ -1,4 +1,4 @@
-from src import Vetor
+from src.objetos.Vetor import Vetor
 
 def produtoVetorial(vetor1, vetor2):
     if type(vetor1) is not Vetor: raise Exception("vetor1 não é um vetor valido")

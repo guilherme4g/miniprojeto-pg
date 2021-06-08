@@ -1,4 +1,4 @@
-from src import Ponto
+from src.objetos.Ponto import Ponto
 
 class Esfera:
     def __init__(self, ponto, raio):

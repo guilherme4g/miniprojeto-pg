@@ -1,4 +1,5 @@
-from src import Vetor,produtoEscalar
+from src.objetos.Vetor import Vetor
+from src.FerramentasBasicas.produtoEscalar import produtoEscalar
 
 def saoOrtogonais (vetor1, vetor2):
     if type(vetor1) is not Vetor: raise Exception("vetor1 não é um vetor valido") 

@@ -1,3 +1,7 @@
+from src.objetos.Base import Base
+from src.FerramentasBasicas.eLI import eLI
+from src.objetos.Triangulo import Triangulo
+from src.objetos.Ponto import Ponto
 from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos
 
 # Tetando função produtoEscalar com vetor invalido
@@ -35,3 +39,12 @@ vetor1 = Vetor(-3, 2, 1)
 vetor2 = Vetor(-9, 7, 3)
 
 print(saoParalelos(vetor1, vetor2))
+
+#Teste de triangulo válido
+
+ponto1 = Ponto(0,0,0)
+ponto2 = Ponto(0,0,1)
+ponto3 = Ponto(1,0,0)
+
+triangulo = Triangulo(ponto1, ponto2, ponto3)
+

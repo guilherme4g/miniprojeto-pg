@@ -1,5 +1,4 @@
-from src import  Vetor
-from src import eLI
+from src.FerramentasBasicas.eLI import eLI
 class Base:
     def __init__(self,v1, v2, v3):
         assert eLI(v1, v2, v3)
