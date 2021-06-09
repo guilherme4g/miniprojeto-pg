@@ -1,8 +1,9 @@
 from src.objetos.Base import Base
 from src.FerramentasBasicas.eLI import eLI
 from src.objetos.Triangulo import Triangulo
+from src.objetos.Reta import Reta
 from src.objetos.Ponto import Ponto
-from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos
+from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, projecaoReta
 
 # Tetando função produtoEscalar com vetor invalido
 vetor1 = Vetor(4,2,3)
@@ -48,3 +49,7 @@ ponto3 = Ponto(1,0,0)
 
 triangulo = Triangulo(ponto1, ponto2, ponto3)
 
+#teste projeçao sobre reta
+reta = Reta(ponto1, vetor2)
+v = projecaoReta(vetor1, reta)
+print(v.x1)
