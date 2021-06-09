@@ -1,7 +1,7 @@
 from src.objetos.Vetor import Vetor
 from src.objetos.Reta import Reta
 
-def saoParalelos(vetor, reta):
+def eParalelo(vetor, reta):
     if type(vetor) is not Vetor: raise Exception("argumento vetor não é um vetor valido")
     if type(reta) is not Reta: raise Exception("argumento reta não é uma reta valido")
 
