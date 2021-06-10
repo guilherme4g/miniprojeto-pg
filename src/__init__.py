@@ -16,5 +16,7 @@ from src.FerramentasBasicas.norma import norma
 from src.FerramentasBasicas.produtoVetorial import produtoVetorial
 from src.FerramentasBasicas.saoParalelos import saoParalelos
 
-#Importando funcoes - Sobre Objetos]
-from src.SobreObjetos.projecaoReta import  projecaoReta
+#Importando funcoes - Sobre Objetos
+from src.SobreObjetos.projecao import  projecao
+from src.SobreObjetos.componenteOrtogonal import  componenteOrtogonal
+from src.SobreObjetos.complementoOrtogonal import  complementoOrtogonal

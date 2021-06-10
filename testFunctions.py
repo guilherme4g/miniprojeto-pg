@@ -3,7 +3,9 @@ from src.FerramentasBasicas.eLI import eLI
 from src.objetos.Triangulo import Triangulo
 from src.objetos.Reta import Reta
 from src.objetos.Ponto import Ponto
-from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, projecaoReta
+from src.objetos.Plano import Plano
+from src.SobreObjetos.projecao import projecao
+from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, componenteOrtogonal, complementoOrtogonal
 
 # Tetando função produtoEscalar com vetor invalido
 vetor1 = Vetor(4,2,3)
@@ -49,7 +51,18 @@ ponto3 = Ponto(1,0,0)
 
 triangulo = Triangulo(ponto1, ponto2, ponto3)
 
-#teste projeçao sobre reta
+#teste projeçao sobre retaponto1 = Ponto(3, 2, 9)
+ponto1 = Ponto(3, 2, 9)
 reta = Reta(ponto1, vetor2)
-v = projecaoReta(vetor1, reta)
+v = projecao(vetor1, reta)
 print(v.x1)
+
+#teste componente ortogonal
+plano = Plano(ponto1, vetor1)
+componente = componenteOrtogonal(vetor2, plano)
+print(f'{componente.x1}, {componente.x2}, {componente.x3}')
+
+#teste de complementoOrtogonal
+x = complementoOrtogonal(plano, reta)
+y = complementoOrtogonal(reta, plano)
+print(f'{x} : {y}')
