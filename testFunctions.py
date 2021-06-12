@@ -3,9 +3,10 @@ from src.FerramentasBasicas.eLI import eLI
 from src.Objetos.Triangulo import Triangulo
 from src.Objetos.Reta import Reta
 from src.Objetos.Ponto import Ponto
+from src.Objetos.Esfera import Esfera
 from src.Objetos.Plano import Plano
 from src.SobreObjetos.projecao import projecao
-from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, componenteOrtogonal, complementoOrtogonal
+from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, componenteOrtogonal, complementoOrtogonal, intersecaoEsfera
 
 # Tetando função produtoEscalar com vetor invalido
 vetor1 = Vetor(4,2,3)
@@ -66,3 +67,8 @@ print(f'{componente.x1}, {componente.x2}, {componente.x3}')
 x = complementoOrtogonal(plano, reta)
 y = complementoOrtogonal(reta, plano)
 print(f'{x} : {y}')
+
+#teste intersecaoEsfera
+esfera = Esfera(ponto, 10)
+objeto = intersecaoEsfera(reta, esfera)
+print(objeto)
