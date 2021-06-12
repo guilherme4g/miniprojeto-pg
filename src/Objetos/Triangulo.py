@@ -1,5 +1,5 @@
 import math
-from src.objetos.Ponto import Ponto
+from src.Objetos.Ponto import Ponto
 
 class Triangulo:
     def __init__(self, ponto1, ponto2, ponto3):

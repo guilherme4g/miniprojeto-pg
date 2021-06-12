@@ -1,5 +1,5 @@
-from src.objetos.Reta import Reta
-from src.objetos.Plano import Plano
+from src.Objetos.Reta import Reta
+from src.Objetos.Plano import Plano
 from src.SobreObjetos.eParalelo import eParalelo
 
 def complementoOrtogonal(argumento1, argumento2):  

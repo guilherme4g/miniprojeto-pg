@@ -1,5 +1,5 @@
-from src.objetos.Vetor import Vetor
-from src.objetos.Plano import Plano
+from src.Objetos.Vetor import Vetor
+from src.Objetos.Plano import Plano
 from src.FerramentasBasicas.projecao import projecao
 
 def componenteOrtogonal(vetor, plano):

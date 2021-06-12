@@ -1,6 +1,6 @@
 """função que encontra o angulo entre dois vetores dados"""
 import math
-from src.objetos.Vetor import Vetor
+from src.Objetos.Vetor import Vetor
 
 def projecao(v1, v2):
     quadrado1 = v1.x1**2

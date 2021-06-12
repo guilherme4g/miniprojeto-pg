@@ -1,5 +1,5 @@
 import math
-from src.objetos.Vetor import Vetor
+from src.Objetos.Vetor import Vetor
 
 def projecao(v1, v2):
 

@@ -1,5 +1,5 @@
-from src.objetos.Vetor import Vetor
-from src.objetos.Reta import Reta
+from src.Objetos.Vetor import Vetor
+from src.Objetos.Reta import Reta
 from src.FerramentasBasicas.projecao import projecao as projecaoOrtogonal
 
 def projecao(vetor, reta):

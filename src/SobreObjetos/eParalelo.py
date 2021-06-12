@@ -1,5 +1,5 @@
-from src.objetos.Vetor import Vetor
-from src.objetos.Reta import Reta
+from src.Objetos.Vetor import Vetor
+from src.Objetos.Reta import Reta
 
 def eParalelo(vetor, reta):
     if type(vetor) is not Vetor: raise Exception("argumento vetor não é um vetor valido")

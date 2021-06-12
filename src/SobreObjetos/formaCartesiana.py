@@ -1,4 +1,4 @@
-from src.objetos.Plano import Plano
+from src.Objetos.Plano import Plano
 
 def formaCartesiana(plano):
     if type(plano) is not Plano: raise Exception("argumento reta não é uma reta valido")

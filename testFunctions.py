@@ -1,9 +1,9 @@
-from src.objetos.Base import Base
+from src.Objetos.Base import Base
 from src.FerramentasBasicas.eLI import eLI
-from src.objetos.Triangulo import Triangulo
-from src.objetos.Reta import Reta
-from src.objetos.Ponto import Ponto
-from src.objetos.Plano import Plano
+from src.Objetos.Triangulo import Triangulo
+from src.Objetos.Reta import Reta
+from src.Objetos.Ponto import Ponto
+from src.Objetos.Plano import Plano
 from src.SobreObjetos.projecao import projecao
 from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, componenteOrtogonal, complementoOrtogonal
 

@@ -1,4 +1,4 @@
-from src.objetos.Vetor import Vetor
+from src.Objetos.Vetor import Vetor
 from src.FerramentasBasicas.produtoEscalar import produtoEscalar
 
 def saoOrtogonais (vetor1, vetor2):

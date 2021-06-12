@@ -1,12 +1,12 @@
-# Importando objetos
-from src.objetos.Base import  Base
-from src.objetos.Esfera import  Esfera
-from src.objetos.Plano import  Plano
-from src.objetos.Ponto import  Ponto
-from src.objetos.Reta import  Reta
-from src.objetos.Segmento import  Segmento
-from src.objetos.Triangulo import  Triangulo
-from src.objetos.Vetor import  Vetor
+# Importando Objetos
+from src.Objetos.Base import  Base
+from src.Objetos.Esfera import  Esfera
+from src.Objetos.Plano import  Plano
+from src.Objetos.Ponto import  Ponto
+from src.Objetos.Reta import  Reta
+from src.Objetos.Segmento import  Segmento
+from src.Objetos.Triangulo import  Triangulo
+from src.Objetos.Vetor import  Vetor
 
 #Importando funcoes - Ferramentas Basicas
 from src.FerramentasBasicas.produtoEscalar import  produtoEscalar

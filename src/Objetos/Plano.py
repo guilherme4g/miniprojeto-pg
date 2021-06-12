@@ -1,5 +1,5 @@
-from src.objetos.Vetor import Vetor
-from src.objetos.Ponto import Ponto
+from src.Objetos.Vetor import Vetor
+from src.Objetos.Ponto import Ponto
 
 
 class Plano:
