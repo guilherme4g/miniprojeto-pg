@@ -6,7 +6,7 @@ from src.Objetos.Ponto import Ponto
 from src.Objetos.Esfera import Esfera
 from src.Objetos.Plano import Plano
 from src.SobreObjetos.projecao import projecao
-from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, componenteOrtogonal, complementoOrtogonal, intersecaoEsfera
+from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, componenteOrtogonal, complementoOrtogonal, intersecaoEsfera, formaCartesiana
 
 # Tetando função produtoEscalar com vetor invalido
 vetor1 = Vetor(4,2,3)
@@ -75,7 +75,7 @@ centro = Ponto(0, 1, 3)
 raio = 4
 esfera = Esfera(centro, raio)
 ponto = Ponto(0, 0, 0)
-vetor = Vetor(0, 1, 0)
+vetor = Vetor(1, 1, 1)
 reta = Reta(ponto, vetor)
 objeto = intersecaoEsfera(reta, esfera)
 if type(objeto) is Ponto:
@@ -83,3 +83,6 @@ if type(objeto) is Ponto:
 elif objeto != 0:
     print_ponto(objeto[0])
     print_ponto(objeto[1])
+
+forma = formaCartesiana(reta)
+print(forma)
