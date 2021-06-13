@@ -19,20 +19,24 @@ def get_vetor_by_pontos(ponto1, ponto2):
 
 def intersecaoEsfera(reta, esfera):
     ac = get_vetor_by_pontos(esfera.ponto, reta.ponto)
+
     proj = projecao(ac, reta.vetorDiretor)
-    x = math.pow(norma(proj), 2) - math.pow(norma(ac),2)
-    print( math.pow(norma(ac),2))
-    print(math.pow(norma(proj), 2))
+    x =math.pow(norma(ac),2)- math.pow(norma(proj), 2)
+
     if x > 0:
         distancia = math.sqrt(x)
     else: raise Exception("argumento")
 
-   
+    distancia = round(distancia)
     if distancia == esfera.raio:
-        return get_ponto_by_vetor(projecao, reta.ponto)
+        return get_ponto_by_vetor(proj, reta.ponto)
     elif distancia < esfera.raio:
-        ponto = get_ponto_by_vetor(projecao, reta.ponto)
-        escalar = esfera.raio/norma(reta.vetorDiretor)
+        ponto = get_ponto_by_vetor(proj, reta.ponto)
+    
+        vetorCentroReta = get_vetor_by_pontos(ponto, esfera.ponto)
+        
+        escalar = math.sqrt(math.pow(esfera.raio,2) - math.pow(norma(vetorCentroReta), 2))/norma(reta.vetorDiretor)
+
         ponto1 = get_ponto_by_vetor(mult_escalar_vetor(escalar, reta.vetorDiretor), ponto)
         ponto2 = get_ponto_by_vetor(mult_escalar_vetor(-1*escalar, reta.vetorDiretor), ponto)
         return (ponto1, ponto2)

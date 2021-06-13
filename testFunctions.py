@@ -69,6 +69,17 @@ y = complementoOrtogonal(reta, plano)
 print(f'{x} : {y}')
 
 #teste intersecaoEsfera
-esfera = Esfera(ponto, 10)
+def print_ponto(ponto):
+    print(f'x:{ponto.x1}, y:{ponto.x2}, z:{ponto.x3}')
+centro = Ponto(0, 1, 3)
+raio = 4
+esfera = Esfera(centro, raio)
+ponto = Ponto(0, 0, 0)
+vetor = Vetor(0, 1, 0)
+reta = Reta(ponto, vetor)
 objeto = intersecaoEsfera(reta, esfera)
-print(objeto)
+if type(objeto) is Ponto:
+    print_ponto(objeto)
+elif objeto != 0:
+    print_ponto(objeto[0])
+    print_ponto(objeto[1])
