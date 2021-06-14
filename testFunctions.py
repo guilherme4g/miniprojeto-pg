@@ -8,27 +8,15 @@ from src.Objetos.Plano import Plano
 from src.SobreObjetos.projecao import projecao
 from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, componenteOrtogonal, complementoOrtogonal, intersecaoEsfera, formaCartesiana
 
-# Tetando função produtoEscalar com vetor invalido
-vetor1 = Vetor(4,2,3)
-vetor2 = Vetor(4,2,-1)
-
-
-# Tetando função produtoEscalar com vetor invalido
-vetor1 = Vetor(2,2,0)
-vetor2 = Vetor(0,5,-3)
-vetor3 = Vetor(4,4,1)
-
-eli = eLI(vetor1,vetor2,vetor3)
-
-Base(vetor1, vetor2, vetor3)
-
-ponto = Ponto(3,2, 2.3)
-
-print(produtoEscalar(vetor1, vetor2))
+# ** Ferramentas Basicas **
+# Testando função produtoEscalar
+vetor1 = Vetor(1, 2, 3)
+vetor2 = Vetor(1, 5, 7)
+print(f"Produto Escalar dos vetores ({vetor1.x1},{vetor1.x2},{vetor1.x3}) e ({vetor2.x1},{vetor2.x2},{vetor2.x3}): ",produtoEscalar(vetor1, vetor2))
 
 #Testando função norma
 vetor1 = Vetor(0,3,4)
-print(norma(vetor1))
+print(f"Norma do vetor ({vetor1.x1},{vetor1.x2},{vetor1.x3}): ", norma(vetor1))
 
 #Testando produto vetorial
 vetor1 = Vetor(1, 2, 3)

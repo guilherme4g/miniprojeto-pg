@@ -20,6 +20,7 @@ from src.FerramentasBasicas.saoParalelos import saoParalelos
 from src.SobreObjetos.projecao import  projecao
 from src.SobreObjetos.componenteOrtogonal import  componenteOrtogonal
 from src.SobreObjetos.complementoOrtogonal import  complementoOrtogonal
+from src.SobreObjetos.formaCartesiana import  formaCartesiana
 
 #Importando funcoes - intersecoes
 from src.Intersecoes.intersecaoEsfera import  intersecaoEsfera
