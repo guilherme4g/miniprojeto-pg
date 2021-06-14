@@ -6,25 +6,28 @@ from src.Objetos.Ponto import Ponto
 from src.Objetos.Esfera import Esfera
 from src.Objetos.Plano import Plano
 from src.SobreObjetos.projecao import projecao
-from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, componenteOrtogonal, complementoOrtogonal, intersecaoEsfera, formaCartesiana
+from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, componenteOrtogonal, complementoOrtogonal, intersecaoEsfera, formaCartesiana, cosseno
 
 # ** Ferramentas Basicas **
-# Testando função produtoEscalar
+# Testando função produtoEscalar - valor esperado 32
 vetor1 = Vetor(1, 2, 3)
 vetor2 = Vetor(1, 5, 7)
 print(f"Produto Escalar dos vetores ({vetor1.x1},{vetor1.x2},{vetor1.x3}) e ({vetor2.x1},{vetor2.x2},{vetor2.x3}): ",produtoEscalar(vetor1, vetor2))
 
-#Testando função norma
+#Testando função norma - valor esperado 5
 vetor1 = Vetor(0,3,4)
 print(f"Norma do vetor ({vetor1.x1},{vetor1.x2},{vetor1.x3}): ", norma(vetor1))
 
-#Testando produto vetorial
+#Testando função cosseno - valor esperado é aproximadante 0.64
 vetor1 = Vetor(1, 2, 3)
+vetor2 = Vetor(4, 2, 1)
+print(f"Cosseno entre os vetores ({vetor1.x1},{vetor1.x2},{vetor1.x3}) e ({vetor2.x1},{vetor2.x2},{vetor2.x3}): ",cosseno(vetor1, vetor2))
+
+#Testando produto vetorial - vetor esperado (-8,4,0)
+vetor1 = Vetor(1, 2, 3) 
 vetor2 = Vetor(1, 2, -1)
-
 vetor3 = produtoVetorial(vetor1, vetor2)
-
-print(f'vetor3 => {vetor3.x1}, {vetor3.x2}, {vetor3.x3}')
+print(f"Produto vetorial dos vetores ({vetor1.x1},{vetor1.x2},{vetor1.x3}) e ({vetor2.x1},{vetor2.x2},{vetor2.x3}): ({vetor3.x1},{vetor3.x2},{vetor3.x3})")
 
 #Testando se vetores são paralelos
 vetor1 = Vetor(-3, 2, 1)

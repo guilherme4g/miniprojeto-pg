@@ -15,6 +15,7 @@ from src.FerramentasBasicas.eLI import eLI
 from src.FerramentasBasicas.norma import norma
 from src.FerramentasBasicas.produtoVetorial import produtoVetorial
 from src.FerramentasBasicas.saoParalelos import saoParalelos
+from src.FerramentasBasicas.cosseno import cosseno
 
 #Importando funcoes - Sobre Objetos
 from src.SobreObjetos.projecao import  projecao

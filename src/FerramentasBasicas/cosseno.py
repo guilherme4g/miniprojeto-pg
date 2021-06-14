@@ -1,20 +1,9 @@
-"""função que encontra o angulo entre dois vetores dados"""
-import math
 from src.Objetos.Vetor import Vetor
+from src.FerramentasBasicas.produtoEscalar import produtoEscalar
+from src.FerramentasBasicas.norma import norma
 
-def projecao(v1, v2):
-    quadrado1 = v1.x1**2
-    quadrado2 = v1.x2**2
-    quadrado3 = v1.x3**2
-    norma1 = math.sqrt(quadrado1 + quadrado2+ quadrado3)
+def cosseno(vetor1, vetor2):
+    if type(vetor1) is not Vetor: raise Exception("vetor1 não é um vetor valido")
+    if type(vetor2) is not Vetor: raise Exception("vetor2 não é um vetor valido")
 
-    quadrado21 = v2.x1**2
-    quadrado22 = v2.x2**2
-    quadrado23 = v2.x3**2
-    norma2 = math.sqrt(quadrado21 + quadrado22+ quadrado23)
-
-    produto = v1.x1 * v2.x1 + v1.x2 * v2.x2 + v1.x3 * v2.x3
-
-    print(round(math.degrees(math.acos(produto/(norma1*norma2))), 3))
-
-projecao([2, 5, 7], [3, 8, 6])
+    return (produtoEscalar(vetor1, vetor2) / (norma(vetor1) * norma(vetor2)))
