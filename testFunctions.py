@@ -75,5 +75,5 @@ elif objeto != 0:
     print_ponto(objeto[0])
     print_ponto(objeto[1])
 
-forma = formaCartesiana(reta)
-print(forma)
+#teste de foma cartesiana reta
+print(formaCartesiana(reta))
