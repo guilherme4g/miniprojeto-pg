@@ -1,19 +1,15 @@
-import math
 from src.Objetos.Vetor import Vetor
+from src.FerramentasBasicas.produtoEscalar import produtoEscalar
 
-def projecao(v1, v2):
+def projecao(vetor1, vetor2):
+    if type(vetor1) is not Vetor: raise Exception("argumento vetor1 não é um vetor valido")
+    if type(vetor2) is not Vetor: raise Exception("argumento vetor2 não é um vetor valido")
+    
+    escalar = produtoEscalar(vetor1, vetor2) / produtoEscalar(vetor2, vetor2)
+    vetorProj = vetor2
 
-    produto = v1.x1 * v2.x2 + v1.x2 * v2.x2 + v1.x3 * v2.x3
+    vetorProj.x1 = escalar * vetorProj.x1
+    vetorProj.x2 = escalar * vetorProj.x2
+    vetorProj.x3 = escalar * vetorProj.x3
 
-    quadrado21 = v2.x1**2
-    quadrado22 = v2.x2**2
-    quadrado23 = v2.x3**2
-    norma2 = math.sqrt(quadrado21 + quadrado22 + quadrado23)
-
-    const = produto/math.pow(norma2, 2)
-    vetor2 = [v2.x1, v2.x2, v2.x3]
-
-    # v é o vetor projetado em forma de array
-    v = list(map(lambda x: round(x * const, 3), vetor2))
-    vetor = Vetor(v[0], v[1], v[2])
-    return vetor
+    return vetorProj
