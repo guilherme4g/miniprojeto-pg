@@ -7,7 +7,7 @@ from src.Objetos.Ponto import Ponto
 from src.Objetos.Esfera import Esfera
 from src.Objetos.Plano import Plano
 from src.SobreObjetos.projecao import projecao
-from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, componenteOrtogonal, complementoOrtogonal, intersecaoEsfera, formaCartesiana, cosseno, normalize, projecaoVetores   
+from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, componenteOrtogonal, complementoOrtogonal, intersecaoEsfera, formaCartesiana, cosseno, normalize, projecaoVetores  , intersecaoReta
 
 # ** Ferramentas Basicas **
 # Testando função produtoEscalar - valor esperado 32 - ok
@@ -117,3 +117,7 @@ elif objeto != 0:
 
 #teste de foma cartesiana reta
 print(formaCartesiana(reta))
+
+#teste da interseção da reta
+reta1 = Reta(ponto1, v)
+print(intersecaoReta(reta, reta1))

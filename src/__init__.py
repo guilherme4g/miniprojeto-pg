@@ -30,3 +30,4 @@ from src.SobreObjetos.formaCartesiana import  formaCartesiana
 
 #Importando funcoes - intersecoes
 from src.Intersecoes.intersecaoEsfera import  intersecaoEsfera
+from src.Intersecoes.intersecaoReta import  intersecaoReta
