@@ -7,7 +7,7 @@ from src.Objetos.Ponto import Ponto
 from src.Objetos.Esfera import Esfera
 from src.Objetos.Plano import Plano
 from src.SobreObjetos.projecao import projecao
-from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, componenteOrtogonal, complementoOrtogonal, intersecaoEsfera, formaCartesiana, cosseno, normalize   
+from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, componenteOrtogonal, complementoOrtogonal, intersecaoEsfera, formaCartesiana, cosseno, normalize, projecaoVetores   
 
 # ** Ferramentas Basicas **
 # Testando função produtoEscalar - valor esperado 32 - ok
@@ -54,7 +54,25 @@ vetor1 = Vetor(-5, 3, 7)
 vetor2 = Vetor(6, -8, 2)
 print(f"Oos vetores ({vetor1.x1},{vetor1.x2},{vetor1.x3}) e ({vetor2.x1},{vetor2.x2},{vetor2.x3}) sao ortogonais? ", saoOrtogonais(vetor1, vetor2))
 
-# falta testar ou reorganizar de ferramentas basicas eLI, projecao, reflexao
+#Testando projecao - vetor esperado vai ser aproximadamente (2.2 , 1.1 , - 2.2) - ok
+vetor1 = Vetor(1, 2, -3) 
+vetor2 = Vetor(2, 1, -2)
+vetor3 = projecaoVetores(vetor1, vetor2)
+print(f"projecao de ({vetor1.x1},{vetor1.x2},{vetor1.x3}) em ({vetor2.x1},{vetor2.x2},{vetor2.x3}): ({vetor3.x1},{vetor3.x2},{vetor3.x3})")
+
+#Testando funcao eLI - true - ok
+vetor1 = Vetor(1,  1,  1) 
+vetor2 = Vetor(1,  2,  1)
+vetor3 = Vetor(3,  2, -1)
+print(f"Os vetores ({vetor1.x1},{vetor1.x2},{vetor1.x3}), ({vetor2.x1},{vetor2.x2},{vetor2.x3}) e ({vetor3.x1},{vetor3.x2},{vetor3.x3}) sao linearmente independentes? ", eLI(vetor1, vetor2, vetor3))
+
+#Testando funcao eLI - false - ok
+vetor1 = Vetor(1,   3,  2) 
+vetor2 = Vetor(-2, -2,  1)
+vetor3 = Vetor(-3, -1,  4)
+print(f"Os vetores ({vetor1.x1},{vetor1.x2},{vetor1.x3}), ({vetor2.x1},{vetor2.x2},{vetor2.x3}) e ({vetor3.x1},{vetor3.x2},{vetor3.x3}) sao linearmente independentes? ", eLI(vetor1, vetor2, vetor3))
+
+# falta testar ou reorganizar de ferramentas basicas reflexao
 
 
 #Teste de triangulo válido

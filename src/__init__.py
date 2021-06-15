@@ -17,6 +17,9 @@ from src.FerramentasBasicas.produtoVetorial import produtoVetorial
 from src.FerramentasBasicas.saoParalelos import saoParalelos
 from src.FerramentasBasicas.cosseno import cosseno
 from src.FerramentasBasicas.projecao import projecao
+
+projecaoVetores = projecao
+
 from src.FerramentasBasicas.normalize import normalize
 
 #Importando funcoes - Sobre Objetos
