@@ -1,3 +1,4 @@
+from src.FerramentasBasicas.saoOrtogonais import saoOrtogonais
 from src.Objetos.Base import Base
 from src.FerramentasBasicas.eLI import eLI
 from src.Objetos.Triangulo import Triangulo
@@ -33,11 +34,28 @@ print(f"Produto vetorial dos vetores ({vetor1.x1},{vetor1.x2},{vetor1.x3}) e ({v
 vetor1 = Vetor(0,3,4)
 print(f"Norma depois de Normalizar o vetor ({vetor1.x1},{vetor1.x2},{vetor1.x3}): ", norma(normalize(vetor1)))
 
-#Testando se vetores são paralelos
-vetor1 = Vetor(-3, 2, 1)
-vetor2 = Vetor(-9, 7, 3)
+#Testando funcao saoParalelos - true - ok
+vetor1 = Vetor(2,   6, -4) 
+vetor2 = Vetor(-3, -9,  6)
+print(f"Oos vetores ({vetor1.x1},{vetor1.x2},{vetor1.x3}) e ({vetor2.x1},{vetor2.x2},{vetor2.x3}) sao paralelos? ", saoParalelos(vetor1, vetor2))
 
-print(saoParalelos(vetor1, vetor2))
+#Testando funcao saoParalelos - false - ok
+vetor1 = Vetor(-5, 3, 7) 
+vetor2 = Vetor(6, -8, 2)
+print(f"Oos vetores ({vetor1.x1},{vetor1.x2},{vetor1.x3}) e ({vetor2.x1},{vetor2.x2},{vetor2.x3}) sao paralelos? ", saoParalelos(vetor1, vetor2))
+
+#Testando funcao saoOrtogonais - true - ok
+vetor1 = Vetor(-1,  2,  5) 
+vetor2 = Vetor( 3,  4, -1)
+print(f"Oos vetores ({vetor1.x1},{vetor1.x2},{vetor1.x3}) e ({vetor2.x1},{vetor2.x2},{vetor2.x3}) sao ortogonais? ", saoOrtogonais(vetor1, vetor2))
+
+#Testando funcao saoOrtogonais - false - ok
+vetor1 = Vetor(-5, 3, 7) 
+vetor2 = Vetor(6, -8, 2)
+print(f"Oos vetores ({vetor1.x1},{vetor1.x2},{vetor1.x3}) e ({vetor2.x1},{vetor2.x2},{vetor2.x3}) sao ortogonais? ", saoOrtogonais(vetor1, vetor2))
+
+# falta testar ou reorganizar de ferramentas basicas eLI, projecao, reflexao, saoOrtogonais
+
 
 #Teste de triangulo válido
 
