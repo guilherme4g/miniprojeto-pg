@@ -9,7 +9,7 @@ def intersecaoRetaPlano(reta, plano):
     if type(plano) is not Reta: raise Exception("plano não é um plano valido")
 
     denominador = produtoEscalar(reta.vetorDiretor , plano.vetorNormal)
-    if (denominador): raise Exception("sao paralelos")
+    if (denominador == 0): raise Exception("sao paralelos")
 
     formaCartesiana = formaCartesianaPlano(plano)
 
