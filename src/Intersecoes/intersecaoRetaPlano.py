@@ -25,4 +25,6 @@ def intersecaoRetaPlano(reta, plano):
     pontoIntersecao.x2 = pontoIntersecao.x2 + vetorDiretorMult.x2
     pontoIntersecao.x3 = pontoIntersecao.x3 + vetorDiretorMult.x3
 
+    return pontoIntersecao
+
 
