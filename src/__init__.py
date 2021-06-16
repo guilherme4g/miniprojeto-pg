@@ -18,6 +18,7 @@ from src.FerramentasBasicas.saoParalelos import saoParalelos
 from src.FerramentasBasicas.cosseno import cosseno
 from src.FerramentasBasicas.projecao import projecao
 
+
 projecaoVetores = projecao
 
 from src.FerramentasBasicas.normalize import normalize
@@ -27,6 +28,7 @@ from src.SobreObjetos.projecao import  projecao
 from src.SobreObjetos.componenteOrtogonal import  componenteOrtogonal
 from src.SobreObjetos.complementoOrtogonal import  complementoOrtogonal
 from src.SobreObjetos.formaCartesiana import  formaCartesiana
+from src.SobreObjetos.projecaoVetorPlano import  projecaoVetorPlano
 
 #Importando funcoes - intersecoes
 from src.Intersecoes.intersecaoEsfera import  intersecaoEsfera

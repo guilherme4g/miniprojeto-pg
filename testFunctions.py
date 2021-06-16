@@ -7,7 +7,7 @@ from src.Objetos.Ponto import Ponto
 from src.Objetos.Esfera import Esfera
 from src.Objetos.Plano import Plano
 from src.SobreObjetos.projecao import projecao
-from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, componenteOrtogonal, complementoOrtogonal, intersecaoEsfera, formaCartesiana, cosseno, normalize, projecaoVetores  , intersecaoReta
+from src import Vetor, produtoEscalar, norma, produtoVetorial, saoParalelos, componenteOrtogonal, complementoOrtogonal, intersecaoEsfera, formaCartesiana, cosseno, normalize, projecaoVetores  , intersecaoReta, projecaoVetorPlano
 
 # ** Ferramentas Basicas **
 # Testando função produtoEscalar - valor esperado 32 - ok
@@ -74,6 +74,13 @@ print(f"Os vetores ({vetor1.x1},{vetor1.x2},{vetor1.x3}), ({vetor2.x1},{vetor2.x
 
 # falta testar ou reorganizar de ferramentas basicas reflexao
 
+#Sobre Objetos 
+vetor1 = Vetor(5,  -6, 3) 
+vetor2 = Vetor(3, -2, 1)
+ponto1 = Ponto(3, 2, 9)
+plano = Plano(ponto1, vetor2)
+proj = projecaoVetorPlano(vetor1, plano)
+print(f'o resultado da projecao de um vetor o plano é: ({proj.x1},{proj.x2},{proj.x3})')
 
 #Teste de triangulo válido
 

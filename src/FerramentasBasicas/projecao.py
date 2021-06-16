@@ -8,6 +8,8 @@ def projecao(vetor1, vetor2):
     
     escalar = produtoEscalar(vetor1, vetor2) / produtoEscalar(vetor2, vetor2)
     vetorProj = copy.copy(vetor2)
+    v1 = produtoEscalar(vetor1, vetor2)
+    v2 = produtoEscalar(vetor2, vetor2)
 
     vetorProj.multEscalar(escalar)
 
